@@ -1,0 +1,5 @@
+synthesizer/bin
+synthesizer/src/__pycache__
+synthesizer/src/out.txt
+synthesizer/src/err.txt
+synthesizer/src/fail.txt

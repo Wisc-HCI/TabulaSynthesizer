@@ -1,0 +1,5 @@
+PROGRAM (0, main)
+init: living room
+
+waypoint: living room
+  >> acts ACTION: say : ['Param:\nspeech: hello']

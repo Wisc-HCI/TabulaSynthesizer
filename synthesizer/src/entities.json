@@ -1,0 +1,49 @@
+{
+	"home base": {"categories":["location", "room"],"class":"room","proper":false, "possessive":false},
+	"living room": {"categories":["location", "room"],"class":"room","proper":false, "possessive":false},
+	"garage": {"categories":["location", "room"],"class":"room","proper":false, "possessive":false},
+	"kitchen": {"categories":["location", "room"],"class":"room","proper":false, "possessive":false},
+	"hallway": {"categories":["location", "room"],"class":"room","proper":false, "possessive":false},
+	"bedroom": {"categories":["location", "room"],"class":"room","proper":false, "possessive":false},
+	"groceries_cold": {"categories":["grabbable","location"],"class":"item","proper":false, "possessive":false},
+	"groceries": {"categories":["grabbable","location"],"class":"item","proper":false, "possessive":false},
+	"countertop": {"categories":["location", "container", "wipeable"],"class":"furniture","proper":false, "possessive":false},
+	"cabinets": {"categories":["location", "container"],"class":"furniture","proper":false, "possessive":false},
+	"person": {"categories":["person","location"],"class":"Person","proper":false, "possessive":true},
+	"toy": {"categories":["grabbable","location"],"class":"item","proper":false, "possessive":false},
+	"chest": {"categories":["location", "container"],"class":"furniture","proper":false, "possessive":false},
+
+	"cashiers": {"categories":["location", "room"],"class":"room","proper":false, "possessive":false},
+	"aisle_1": {"categories":["location", "room"],"class":"room","proper":false, "possessive":false},
+	"aisle_2": {"categories":["location", "room"],"class":"room","proper":false, "possessive":false},
+	"aisle_3": {"categories":["location", "room"],"class":"room","proper":false, "possessive":false},
+	"aisle_4": {"categories":["location", "room"],"class":"room","proper":false, "possessive":false},
+	"meat_section": {"categories":["location", "room"],"class":"room","proper":false, "possessive":false},
+	"beverages_section": {"categories":["location", "room"],"class":"room","proper":false, "possessive":false},
+	"entrance": {"categories":["location", "room"],"class":"room","proper":false, "possessive":false},
+
+	"bar": {"categories":["location", "room"],"class":"room","proper":false, "possessive":false},
+	"hallway": {"categories":["location", "room"],"class":"room","proper":false, "possessive":false},
+	"ballroom": {"categories":["location", "room"],"class":"room","proper":false, "possessive":false},
+	"elevator": {"categories":["location", "room"],"class":"room","proper":false, "possessive":false},
+	"front desk": {"categories":["location", "room"],"class":"room","proper":false, "possessive":false},
+	"visitor center": {"categories":["location", "room"],"class":"room","proper":false, "possessive":false},
+	"lobby": {"categories":["location", "room"],"class":"room","proper":false, "possessive":false},
+	"entry": {"categories":["location", "room"],"class":"room","proper":false, "possessive":false},
+
+	"manager_office": {"categories":["location", "room"],"class":"room","proper":false, "possessive":false},
+
+	"$speech":{"categories":["content"],"class":"Speech","proper":false, "possessive":false},
+
+	"Three Little Pigs": {"categories":["narrative"],"class":"Story","proper":true, "possessive":false},
+	"Hamlet": {"categories":["narrative"],"class":"Story","proper":true, "possessive":false},
+	"Paddington": {"categories":["narrative"],"class":"Story","proper":true, "possessive":false},
+	"Lord of the Rings": {"categories":["narrative"],"class":"Story","proper":true, "possessive":false},
+	"Cinderella": {"categories":["narrative"],"class":"Story","proper":true, "possessive":false},
+	"Great Expectations": {"categories":["narrative"],"class":"Story","proper":true, "possessive":false},
+	"bar celebration": {"categories":["narrative"],"class":"Story","proper":true, "possessive":false},
+	"directions to the visitor center": {"categories":["narrative"],"class":"Story","proper":true, "possessive":false},
+	"message": {"categories":["narrative"],"class":"Message","proper":false, "possessive":false},
+
+	"null":{"categories":["null"],"class":"null","proper":false, "possessive":false}
+}

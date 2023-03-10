@@ -1,0 +1,11 @@
+PROGRAM (0, main)
+init: groceries
+branch condition: ACTION (trigger): say : ['Param:\nspeech: goodbye']
+branch destination: groceries
+
+waypoint: groceries
+  >> acts 
+  goto >> home base
+
+waypoint: home base
+  >> acts 

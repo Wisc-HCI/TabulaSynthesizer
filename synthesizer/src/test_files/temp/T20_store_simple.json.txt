@@ -1,0 +1,5 @@
+PROGRAM (0, main)
+init: aisle_2
+
+waypoint: aisle_2
+  >> acts 

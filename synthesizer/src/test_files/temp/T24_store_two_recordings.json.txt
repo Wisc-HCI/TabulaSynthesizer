@@ -1,0 +1,20 @@
+PROGRAM (0, main)
+init: aisle_2
+
+waypoint: aisle_2
+  >> acts 
+  goto >> meat_section
+
+waypoint: meat_section
+  >> acts 
+  goto >> beverages_section
+
+waypoint: beverages_section
+  >> acts 
+PROGRAM (1, branch)
+from: beverages_section
+branch condition: ACTION (trigger): when_approach : []
+branch destination: beverages_section
+
+waypoint: beverages_section
+  >> acts ACTION: say : ['Param:\nspeech: please be careful not to step in the spill']

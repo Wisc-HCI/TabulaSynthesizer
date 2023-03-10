@@ -1,0 +1,71 @@
+{
+	"world": {
+		"regions": {
+			"kitchen":
+			{
+				"name": "kitchen",
+				"objects": [
+					{
+						"name": "cabinets",
+						"objects": []
+					}
+				]
+			},
+			"garage":
+			{
+				"name": "garage",
+				"objects": [
+					{
+						"name": "car",
+						"objects": [
+										{
+											"name": "groceries",
+											"objects": []
+										}
+									]
+					}
+				]
+			},
+			"living room":
+			{
+				"name": "living room",
+				"objects": [
+					{
+						"name": "countertop",
+						"objects": []
+					}
+				]
+			},
+			"bedroom":
+			{
+				"name": "bedroom",
+				"objects": [
+					{
+						"name": "person",
+						"objects": []
+					}
+				]
+			},
+			"home base":
+			{
+				"name": "home base",
+				"objects": []	
+			}
+		}
+		
+	},
+	"nl": ["Bring in the groceries."],
+	"trajectories": [
+						[{"_type": "command", "cmd": "moveTo", "_id": -2, "args": [{"argname": "destination", "argval": "home base"}]},
+						 {"_type": "command", "cmd": "moveTo", "_id": 0, "args": [{"argname": "destination", "argval": "kitchen"}]}]
+					],
+
+	"penalties": {
+        "PENALTY_CREATION": 1,
+        "PENALTY_DUPLICATE_CREATION": 1,
+        "PENALTY_NEW_ACTION": 1,
+        "PENALTY_EMPTY_WAYPOINT": 1
+	},
+
+	"domain_name": "default_domain"
+}

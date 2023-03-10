@@ -1,0 +1,18 @@
+PROGRAM (0, main)
+init: garage
+
+waypoint: garage
+  >> acts 
+  goto >> kitchen
+
+waypoint: kitchen
+  >> acts 
+  goto >> living room
+
+waypoint: living room
+  >> acts 
+  goto >> bedroom
+
+waypoint: bedroom
+  >> acts 
+  goto >> garage

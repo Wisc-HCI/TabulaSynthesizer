@@ -1,0 +1,30 @@
+PROGRAM (0, main)
+init: bedroom
+
+waypoint: bedroom
+  >> acts ACTION: grab : ['Param:\ntoy']
+  goto >> living room
+
+waypoint: living room
+  >> acts ACTION: put : ['Param:\ntoy', 'Param:\nchest']
+  goto >> bedroom
+PROGRAM (1, branch)
+from: living room
+branch destination: kitchen
+
+waypoint: kitchen
+  >> acts ACTION: grab : ['Param:\ntoy']
+  goto >> chest
+
+waypoint: chest
+  >> acts ACTION: put : ['Param:\ntoy', 'Param:\nchest']
+PROGRAM (2, branch)
+from: living room
+branch destination: hallway
+
+waypoint: hallway
+  >> acts ACTION: grab : ['Param:\ntoy']
+  goto >> chest
+
+waypoint: chest
+  >> acts ACTION: put : ['Param:\ntoy', 'Param:\nchest']

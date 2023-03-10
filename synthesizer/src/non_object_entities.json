@@ -1,0 +1,10 @@
+{	
+	"$speech":{"categories":["content"],"class":"Speech","proper":false, "possessive":false},
+	"Three Little Pigs": {"categories":["narrative"],"class":"Story","proper":true, "possessive":false},
+	"Hamlet": {"categories":["narrative"],"class":"Story","proper":true, "possessive":false},
+	"Paddington": {"categories":["narrative"],"class":"Story","proper":true, "possessive":false},
+	"Lord of the Rings": {"categories":["narrative"],"class":"Story","proper":true, "possessive":false},
+	"Cinderella": {"categories":["narrative"],"class":"Story","proper":true, "possessive":false},
+	"Great Expectations": {"categories":["narrative"],"class":"Story","proper":true, "possessive":false},
+	"null":{"categories":["null"],"class":"null","proper":false, "possessive":false}
+}

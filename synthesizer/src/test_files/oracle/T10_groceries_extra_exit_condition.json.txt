@@ -1,0 +1,17 @@
+PROGRAM (0, main)
+init: groceries
+
+waypoint: groceries
+  >> acts ACTION: grab : ['Param:\ngroceries']
+  goto >> cabinets
+
+waypoint: cabinets
+  >> acts ACTION: put : ['Param:\ngroceries', 'Param:\ncabinets']
+  goto >> groceries
+PROGRAM (1, branch)
+from: groceries
+branch condition: ACTION (trigger): say : ['Param:\nspeech: exit']
+branch destination: home base
+
+waypoint: home base
+  >> acts 

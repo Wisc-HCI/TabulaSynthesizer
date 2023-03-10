@@ -1,0 +1,70 @@
+{
+	"world": {
+		"regions": {
+			"kitchen":
+			{
+				"name": "kitchen",
+				"objects": [
+					{
+						"name": "cabinets",
+						"objects": []
+					}
+				]
+			},
+			"garage":
+			{
+				"name": "garage",
+				"objects": [
+					{
+						"name": "car",
+						"objects": [
+										
+									]
+					}
+				]
+			},
+			"living room":
+			{
+				"name": "living room",
+				"objects": [
+					{
+						"name": "countertop",
+						"objects": []
+					}
+				]
+			},
+			"bedroom":
+			{
+				"name": "bedroom",
+				"objects": [
+					{
+						"name": "person",
+						"objects": []
+					}
+				]
+			},
+			"home base":
+			{
+				"name": "home base",
+				"objects": []	
+			}
+		}
+		
+	},
+	"nl": ["when I arrive bring them in"],
+	"trajectories": [
+						[{"_type": "command", "cmd": "moveTo", "_id": -2, "args": [{"argname": "destination", "argval": "home base"}]},
+						 {"_type": "command", "cmd": "moveTo", "_id": 0, "args": [{"argname": "destination", "argval": "garage"}]},
+						 {"_type": "command", "cmd": "moveTo", "_id": 1, "args": [{"argname": "destination", "argval": "kitchen"}]},
+						 {"_type": "command", "cmd": "moveTo", "_id": 0, "args": [{"argname": "destination", "argval": "garage"}]}]
+					],
+
+	"penalties": {
+        "PENALTY_CREATION": 1,
+        "PENALTY_DUPLICATE_CREATION": 1,
+        "PENALTY_NEW_ACTION": 1,
+        "PENALTY_EMPTY_WAYPOINT": 1
+	},
+
+	"domain_name": "default_domain"
+}

@@ -1,0 +1,54 @@
+{
+	"idle": {
+		"action_types": ["command"],
+		"argnames": [],
+		"argtypes": [],
+		"preconditions": {},
+		"postconditions": {},
+		"verbnet": [],
+		"synsets": []
+	},
+	"moveTo": {
+		"action_types": ["command"],
+		"argnames": ["destination"],
+		"argtypes": ["location"],
+		"preconditions": {},
+		"postconditions": {"currLocation":0},
+		"verbnet": ["roll-51.3.1","escape-51.1","leave-51.2","run-51.3.2","chase-51.6","reach-51.8"],
+		"synsets": ["travel.v.01","move.v.02","move.v.03","move.v.07"]
+	},
+	"tell": {
+		"action_types": ["command"],
+		"argnames": ["person", "narrative"],
+		"argtypes": ["person", "narrative"],
+		"preconditions": {"currLocation": "person", "interruptable": true},
+		"postconditions": {},
+		"verbnet": ["say-37.7","transfer_mesg-37.1.1","tell-37.2","manner_speaking-37.3","inquire-37.1.2","interrogate-37.1.3","transfer_mesg-37.1.1","tell-37.2","manner_speaking-37.3","talk-37.5","lecture-37.11"],
+		"synsets": ["state.v.01","allege.v.01","suppose.v.01","order.v.01","pronounce.v.01","say.v.08","say.v.09","say.v.11","ask.v.01","ask.v.02","ask.v.03","ask.v.04","ask.v.05","ask.v.07", "tell.v.03"]
+	},
+	"moveTo": {
+		"action_types": ["command"],
+		"argnames": ["destination"],
+		"argtypes": ["location"],
+		"preconditions": {"canTravel": true},
+		"postconditions": {"currLocation":0},
+		"verbnet": ["roll-51.3.1","escape-51.1","leave-51.2","run-51.3.2","chase-51.6","reach-51.8"],
+		"synsets": ["travel.v.01","move.v.02","move.v.03","move.v.07"]
+	},
+	"wait_for_acknowledge": {
+		"action_types": ["command"],
+		"argnames": [],
+		"argtypes": [],
+		"preconditions": {},
+		"postconditions": {"interruptable":true},
+		"verbnet": ["escape-51.1-1-2", "escape-51.1"],
+		"synsets": ["approach.v.01"]
+	},
+
+	"init": {
+		"carryingItem": false,
+		"currLocation": "home base",
+		"interruptable": false,
+		"closeToPerson": false
+	}
+}

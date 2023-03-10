@@ -1,0 +1,9 @@
+PROGRAM (0, main)
+init: manager_office
+
+waypoint: manager_office
+  >> acts ACTION: wait_for_acknowledge : []
+  goto >> person
+
+waypoint: person
+  >> acts ACTION: tell : ['Param:\nperson', 'Param:\nmessage']

@@ -1,0 +1,14 @@
+PROGRAM (0, main)
+init: kitchen
+
+waypoint: kitchen
+  >> acts ACTION: say : ['Param:\nspeech: hello']
+  goto >> groceries
+
+waypoint: groceries
+  >> acts ACTION: grab : ['Param:\ngroceries']
+  goto >> cabinets
+
+waypoint: cabinets
+  >> acts ACTION: put : ['Param:\ngroceries', 'Param:\ncabinets']
+  goto >> groceries

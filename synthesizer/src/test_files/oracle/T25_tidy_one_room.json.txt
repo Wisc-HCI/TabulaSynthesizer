@@ -1,0 +1,10 @@
+PROGRAM (0, main)
+init: bedroom
+
+waypoint: bedroom
+  >> acts ACTION: grab : ['Param:\ntoy']
+  goto >> living room
+
+waypoint: living room
+  >> acts ACTION: put : ['Param:\ntoy', 'Param:\nchest']
+  goto >> bedroom

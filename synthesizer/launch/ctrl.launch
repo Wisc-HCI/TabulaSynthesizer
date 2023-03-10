@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<launch>
+    
+    <arg name="stt_node"    default="false" doc="whether to bring up a separate ROS node for stt" />
+
+    <rosparam file="$(find synthesizer)/config/params.yaml" command="load"/>
+    <node name="server_endpoint" pkg="ros_tcp_endpoint" type="default_server_endpoint.py" args="--wait" output="screen" respawn="true" />
+    <node name="synthesizer" pkg="synthesizer" type="ctrl.py" args="--wait" output="screen" respawn="true" />
+    <node name="stt" pkg="speech_to_text" type="ctrl.py" output="screen" if="$(arg stt_node)"/>
+
+    <!-- Run the map server -->
+    <arg name="map_file" default="$(find synthesizer)/maps/store.yaml"/>
+    <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+</launch>

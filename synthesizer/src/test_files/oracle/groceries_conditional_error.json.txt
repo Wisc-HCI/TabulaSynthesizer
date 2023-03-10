@@ -1,0 +1,12 @@
+PROGRAM (0, main)
+init: garage
+branch condition: ACTION (trigger): when_approach : []
+branch destination: garage
+
+waypoint: garage
+  >> acts ACTION: grab : ['Param:\ngroceries_cold']
+  goto >> cabinets
+
+waypoint: cabinets
+  >> acts ACTION: put : ['Param:\ngroceries_cold', 'Param:\ncabinets']
+  goto >> garage

@@ -1,0 +1,66 @@
+{
+	"world": {
+		"regions": {
+			"cashiers":
+			{
+				"name": "cashiers",
+				"objects": [
+				]
+			},
+			"aisle_1":
+			{
+				"name": "aisle_1",
+				"objects": [
+				]
+			},
+			"aisle_2":
+			{
+				"name": "aisle_2",
+				"objects": [
+				]
+			},
+			"aisle_3":
+			{
+				"name": "aisle_3",
+				"objects": [
+				]
+			},
+			"aisle_4":
+			{
+				"name": "aisle_4",
+				"objects": [
+				]
+			},
+			"meat_section":
+			{
+				"name": "meat_section",
+				"objects": [
+				]
+			},
+			"beverages_section":
+			{
+				"name": "beverages_section",
+				"objects": [
+				]
+			}
+		}
+		
+	},
+	"nl": ["say please be careful not to step in the spill"],
+	"trajectories": [
+						[
+						 {"_type": "command", "cmd": "moveTo", "_id": -2, "args": [{"argname": "destination", "argval": "home base"}]},
+						 {"_type": "command", "cmd": "moveTo", "_id": 0, "args": [{"argname": "destination", "argval": "beverages_section"}]},
+						 {"_type": "command", "cmd": "moveTo", "_id": 0, "args": [{"argname": "destination", "argval": "beverages_section"}]}
+						]
+					],
+
+	"penalties": {
+        "PENALTY_CREATION": 1,
+        "PENALTY_DUPLICATE_CREATION": 1,
+        "PENALTY_NEW_ACTION": 1,
+        "PENALTY_EMPTY_WAYPOINT": 1
+	},
+
+	"domain_name": "default_domain"
+}

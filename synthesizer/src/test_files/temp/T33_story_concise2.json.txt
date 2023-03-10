@@ -1,0 +1,5 @@
+PROGRAM (0, main)
+init: person
+
+waypoint: person
+  >> acts ACTION: tell : ['Param:\nThree Little Pigs']

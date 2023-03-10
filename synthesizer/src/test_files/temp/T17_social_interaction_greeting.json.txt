@@ -1,0 +1,8 @@
+PROGRAM (0, main)
+init: entry
+branch condition: ACTION (trigger): when_approach : []
+branch destination: entry
+
+waypoint: entry
+  >> acts ACTION: say : ['Param:\nspeech: hello']
+  goto >> entry

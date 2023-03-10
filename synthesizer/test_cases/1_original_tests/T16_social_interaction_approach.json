@@ -1,0 +1,72 @@
+{
+	"world": {
+		"regions": {
+			"bar":
+			{
+				"name": "bar",
+				"objects": [
+				]
+			},
+			"elevator":
+			{
+				"name": "elevator",
+				"objects": [
+				]
+			},
+			"ballroom":
+			{
+				"name": "ballroom",
+				"objects": [
+				]
+			},
+			"hallway":
+			{
+				"name": "hallway",
+				"objects": [
+				]
+			},
+			"lobby":
+			{
+				"name": "lobby",
+				"objects": [
+				]
+			},
+			"entry":
+			{
+				"name": "entry",
+				"objects": [
+					{
+						"name":"person",
+						"objects": [
+							
+						]
+					}
+				]
+			},
+			"visitor center":
+			{
+				"name": "visitor center",
+				"objects": [
+				]
+			}
+		}
+	},
+	"nl": ["tell people the directions to the visitor center. Say would you like me to escort you there?",
+		   "If they say yes"],
+	"trajectories": [
+						[{"_type": "command", "cmd": "moveTo", "_id": 0, "args": [{"argname": "destination", "argval": "lobby"}]},
+						 {"_type": "command", "cmd": "moveTo", "_id": 2, "args": [{"argname": "destination", "argval": "entry"}]}],
+						[{"_type": "command", "cmd": "moveTo", "_id": 2, "args": [{"argname": "destination", "argval": "person"}]},
+						 {"_type": "command", "cmd": "moveTo", "_id": 1, "args": [{"argname": "destination", "argval": "visitor center"}]},
+						 {"_type": "command", "cmd": "moveTo", "_id": 0, "args": [{"argname": "destination", "argval": "person"}]}]
+					],
+
+	"penalties": {
+        "PENALTY_CREATION": 1,
+        "PENALTY_DUPLICATE_CREATION": 1,
+        "PENALTY_NEW_ACTION": 1,
+        "PENALTY_EMPTY_WAYPOINT": 1
+	},
+
+	"domain_name": "default_domain"
+}

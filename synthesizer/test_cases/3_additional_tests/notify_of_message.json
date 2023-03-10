@@ -1,0 +1,33 @@
+{
+	"world": {
+		"regions": {
+			"manager_office":
+			{
+				"name": "manager_office",
+				"objects": [
+					
+				]
+			},
+			"home base":
+			{
+				"name": "home base",
+				"objects": []	
+			}
+		}
+		
+	},
+	"nl": ["recite the message"],
+	"trajectories": [
+						[{"_type": "command", "cmd": "moveTo", "_id": 0, "args": [{"argname": "destination", "argval": "home base"}]},
+						 {"_type": "command", "cmd": "moveTo", "_id": 1, "args": [{"argname": "destination", "argval": "manager_office"}]}]
+					],
+
+	"penalties": {
+        "PENALTY_CREATION": 1,
+        "PENALTY_DUPLICATE_CREATION": 1,
+        "PENALTY_NEW_ACTION": 1,
+        "PENALTY_EMPTY_WAYPOINT": 1
+	},
+
+	"domain_name": "office_domain"
+}

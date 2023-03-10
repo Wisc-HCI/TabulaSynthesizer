@@ -1,0 +1,6 @@
+PROGRAM (0, main)
+init: beverages_section
+
+waypoint: beverages_section
+  >> acts ACTION: say : ['Param:\nspeech: please be careful not to step in the spill']
+  goto >> beverages_section

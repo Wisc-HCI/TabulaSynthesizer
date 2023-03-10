@@ -1,0 +1,12 @@
+PROGRAM (0, main)
+init: person
+
+waypoint: person
+  >> acts ACTION: tell : ['Param:\nbar celebration'] : ACTION: say : ['Param:\nspeech: would you like me to escort you there']
+PROGRAM (1, branch)
+from: person
+branch condition: ACTION (trigger): say : ['Param:\nspeech: yes']
+branch destination: bar
+
+waypoint: bar
+  >> acts 

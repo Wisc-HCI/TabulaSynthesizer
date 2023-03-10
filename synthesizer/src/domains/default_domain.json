@@ -1,0 +1,138 @@
+{
+	"idle": {
+		"action_types": ["command"],
+		"argnames": [],
+		"argtypes": [],
+		"preconditions": {},
+		"postconditions": {},
+		"verbnet": [],
+		"synsets": []
+	},
+	"moveTo": {
+		"action_types": ["command"],
+		"argnames": ["destination"],
+		"argtypes": ["location"],
+		"preconditions": {"canTravel": true},
+		"postconditions": {"currLocation":0},
+		"verbnet": ["roll-51.3.1","escape-51.1","leave-51.2","run-51.3.2","chase-51.6","reach-51.8"],
+		"synsets": ["travel.v.01","move.v.02","move.v.03","move.v.07"]
+	},
+	"grab": {
+		"action_types": ["command"],
+		"argnames": ["item"],
+		"argtypes": ["grabbable"],
+		"preconditions": {"carryingItem": ""},
+		"postconditions": {"carryingItem": 0},
+		"verbnet": ["obtain-13.5.2","get-13.5.1"],
+		"synsets": ["grab.v.03","grab.v.05"]
+	},
+	"put": {
+		"action_types": ["command"],
+		"argnames": ["item", "place"],
+		"argtypes": ["grabbable", "container"],
+		"preconditions": {"carryingItem": 0},
+		"postconditions": {"carryingItem": ""},
+		"verbnet": ["put-9.1","put_spatial-9.2","put_direction-9.4", "send-11.1","slide-11.2","bring-11.3","carry-11.4","drive-11.5"],
+		"synsets": ["put.v.01","lodge.v.02", "deliver.v.02"]
+	},
+	"say": {
+		"action_types": ["command", "trigger"],
+		"argnames": ["speech"],
+		"argtypes": ["content"],
+		"preconditions": {"interruptable": true},
+		"postconditions": {},
+		"verbnet": ["say-37.7","transfer_mesg-37.1.1","tell-37.2","manner_speaking-37.3","inquire-37.1.2","interrogate-37.1.3","transfer_mesg-37.1.1","tell-37.2","manner_speaking-37.3","talk-37.5","lecture-37.11"],
+		"synsets": ["state.v.01","allege.v.01","suppose.v.01","order.v.01","pronounce.v.01","say.v.08","say.v.09","say.v.11","ask.v.01","ask.v.02","ask.v.03","ask.v.04","ask.v.05","ask.v.07", "tell.v.03"]
+	},
+	"tell": {
+		"action_types": ["command"],
+		"argnames": ["narrative"],
+		"argtypes": ["narrative"],
+		"preconditions": {"currLocation": "person", "interruptable": true},
+		"postconditions": {},
+		"verbnet": ["say-37.7","transfer_mesg-37.1.1","tell-37.2","manner_speaking-37.3","inquire-37.1.2","interrogate-37.1.3","transfer_mesg-37.1.1","tell-37.2","manner_speaking-37.3","talk-37.5","lecture-37.11"],
+		"synsets": ["state.v.01","allege.v.01","suppose.v.01","order.v.01","pronounce.v.01","say.v.08","say.v.09","say.v.11","ask.v.01","ask.v.02","ask.v.03","ask.v.04","ask.v.05","ask.v.07", "tell.v.03"]
+	},
+
+	"when_approach": {
+		"action_types": ["trigger"],
+		"argnames": [],
+		"argtypes": [],
+		"preconditions": {},
+		"postconditions": {},
+		"verbnet": ["escape-51.1-1-2", "escape-51.1"],
+		"synsets": ["approach.v.01"]
+	},
+	"when_take": {
+		"action_types": ["trigger"],
+		"argnames": [],
+		"argtypes": [],
+		"preconditions": {},
+		"postconditions": {"carryingItem": ""},
+		"verbnet": [],
+		"synsets": []
+	},
+	"when_receive": {
+		"action_types": ["trigger"],
+		"argnames": ["item"],
+		"argtypes": ["grabbable"],
+		"preconditions": {"carryingItem": ""},
+		"postconditions": {"carryingItem": 0},
+		"verbnet": ["obtain-13.5.2","get-13.5.1"],
+		"synsets": ["receive.v.01"]
+	},
+	"when_time": {
+		"action_types": ["trigger"],
+		"argnames": [],
+		"argtypes": [],
+		"preconditions": {},
+		"postconditions": {},
+		"verbnet": [],
+		"synsets": []
+	},
+	"after_duration": {
+		"action_types": ["trigger"],
+		"argnames": [],
+		"argtypes": [],
+		"preconditions": {},
+		"postconditions": {},
+		"verbnet": [],
+		"synsets": []
+	},
+	"if_nothing": {
+		"action_types": ["trigger"],
+		"argnames": [],
+		"argtypes": [],
+		"preconditions": {},
+		"postconditions": {},
+		"verbnet": [],
+		"synsets": []
+	},
+
+	"if_world": {
+		"action_types": ["conditional"],
+		"argnames": [],
+		"argtypes": [],
+		"preconditions": {},
+		"postconditions": {},
+		"verbnet": [],
+		"synsets": []
+	},
+	"if_var_val": {
+		"action_types": ["conditional"],
+		"argnames": [],
+		"argtypes": [],
+		"preconditions": {},
+		"postconditions": {},
+		"verbnet": [],
+		"synsets": []
+	},
+
+	"init": {
+		"canTravel": true,
+		"currLocation": "home base",
+		"carryingItem": "",
+		"interruptable": true,
+		"closeToPerson": false
+	}
+}

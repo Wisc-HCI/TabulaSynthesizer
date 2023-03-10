@@ -1,0 +1,13 @@
+PROGRAM (0, main)
+init: aisle_2
+
+waypoint: aisle_2
+  >> acts 
+  goto >> meat_section
+
+waypoint: meat_section
+  >> acts 
+  goto >> beverages_section
+
+waypoint: beverages_section
+  >> acts 

@@ -1,0 +1,9 @@
+PROGRAM (0, main)
+init: groceries
+
+waypoint: groceries
+  >> acts ACTION: grab : ['Param:\ngroceries']
+  goto >> cabinets
+
+waypoint: cabinets
+  >> acts ACTION: put : ['Param:\ngroceries', 'Param:\ncabinets']
