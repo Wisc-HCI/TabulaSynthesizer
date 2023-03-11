@@ -8,10 +8,10 @@ Installation involves a few extra steps if you're using ROS and not just running
 
 ### Prerequisites
 
-- Ubuntu 20.04
-- an installation of python3 and java
+- Ubuntu 20.04 (If you are not using ROS, you can likely use another OS, as long as the python3 and java programs run!)
+- An installation of python3 and java
 - python3 libraries: nltk, spacy,contractions
-- ROS Noetic (optional)
+- ROS Noetic (optional) 
 - ROS TCP Endpoint (if using ROS)
 
 #### Clone repo
@@ -136,7 +136,9 @@ outputs: Outputs of the syntehsizer are generated in `synthesizer/src/test_files
 
 To run the test cases, do the following:
 
-Ensure the Stanford CoreNLP server is running in the correct location.
+1. Ensure the Stanford CoreNLP server is running in the correct location.
+
+2. In another terminal windows, assuming you are in the `TabulaSynthesizer` folder, run:
 
 ```
 cd synthesizer/src
