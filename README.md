@@ -32,8 +32,8 @@ source devel/setup.bash
 ```
 cd TabulaSynthesizer
 mkdir bin && cd bin
-wget https://nlp.stanford.edu/software/stanford-corenlp-latest.zip
-unzip stanford-corenlp-latest.zip
+wget https://nlp.stanford.edu/software/stanford-corenlp-4.5.4.zip
+unzip stanford-corenlp-4.5.4.zip
 ```
 
 To run it, you'll need Java, which can be installed like: `sudo apt install openjdk-11-jre-headless`
@@ -106,7 +106,7 @@ source devel/setup.bash
 Before running, the Stanford CoreNLP server must be started. Make sure that this server is installed in `TabulaSynthesizer/bin` and make sure that you run it from where it's installed, otherwise the code will have runtime issues. --> in `bin` then you need to run it in the standford nlp folder it makes, not directly from the bin folder. For example:
 
 ```
-cd ~/catkin_ws/src/TabulaSynthesizer/bin/stanford-corenlp-4.5.0/
+cd ~/catkin_ws/src/TabulaSynthesizer/bin/stanford-corenlp-4.5.4/
 java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
 ```
 
